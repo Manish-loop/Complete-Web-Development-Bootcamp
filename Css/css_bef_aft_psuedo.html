@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after psuedo selectors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+        }
+
+        header::before {
+            content: "";
+            background: url('https://images.unsplash.com/photo-1573067485648-4cb2618b5e09?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHZlZ2V0YWJsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60');
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+        .navigation {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 20px;
+            display: flex;
+        }
+
+        li {
+            list-style: none;
+            padding: 20px 22px;
+
+        }
+
+        section {
+            border: 2px solid red;
+            margin: 3px 23px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        section::before {
+            content: "Work hard to improve skills";
+        }
+
+        section::after {
+            color: rgb(90, 83, 135);
+            content: "This is web development";
+        }
+
+        h2 {
+            font-size: 4rem;
+        }
+
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Contacts</li>
+            </ul>
+        </nav>
+        <section>
+            <h2>Welcome to the web development.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis minima quasi sequi libero enim! Atque
+                perspiciatis quod illo laborum alias neque optio perferendis culpa, officiis quae necessitatibus,
+                mollitia fuga cupiditate.</p>
+        </section>
+    </header>
+</body>
+
+</html>

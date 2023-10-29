@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Combinators</title>
+    <style>
+        h2 {
+            color: blue;
+            text-align: center;
+            margin-top: 4px;
+            margin-bottom: 20px;
+        }    
+        /*Descendent selector (space)*/
+        div p {         
+            background-color: red;
+        }
+        /*Child selector (>)*/
+        div>p {
+            background-color: blue;
+        }
+        /*Adjacent sibling selector (+)*/
+        div+p {
+            background-color: green;
+        }   
+        /*General sibling selector(~)*/
+     /*    div~p {
+            background-color: yellow;
+        }  */
+    
+    </style>
+</head>
+<body>
+    <h2>Css combinators explained</h2>
+
+    <div>
+        <p>This is paragraph one.</p>
+        <p>This is paragraph two.</p>
+       <span> <p>This is paragraph three.</p></span>
+    </div>
+
+    <p>This is paragraph four.</p>
+    <p>This is paragraph five.</p>
+</body>
+</html>

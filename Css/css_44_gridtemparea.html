@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Create layouts using grid template area</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 'navbar navbar navbar navbar'
+                'section section section slide' 
+                'footer footer footer footer';
+        }
+
+        .item {
+            border: 2px solid red;
+            background-color: grey;
+            padding: 12px 15px;
+        }
+
+        #navbar {
+            grid-area: navbar;
+        }
+
+        #section {
+            grid-area: section;
+        }
+
+        #slide {
+            grid-area: slide;
+        }
+        footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+            Home About Contact Us  
+        </div>
+        <div id="section" class="item">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, adipisci doloribus explicabo tenetur voluptatibus est. Eaque voluptas vel repellendus, incidunt iure totam aperiam maiores atque odio repudiandae iste eos commodi laborum facilis dolorum dolorem ad deserunt recusandae tenetur eligendi blanditiis fugiat! Ullam, voluptates! Fugit, cumque modi officia sit ad vitae perferendis aut placeat veniam eveniet facere itaque asperiores ab aspernatur qui quas illum! Error illum corrupti veniam esse dignissimos quae maiores quisquam dolores. Perspiciatis porro, explicabo odit minus quis libero suscipit obcaecati animi minima voluptate debitis amet doloremque, tempora sed provident voluptates quaerat reiciendis saepe qui excepturi mollitia! Provident corrupti at nostrum consequuntur explicabo ut excepturi pariatur earum! Illum sapiente excepturi, voluptatibus nam magnam molestias modi? Quo eligendi quasi suscipit molestias ipsam neque necessitatibus laboriosam odio cum ullam et sint, nam quibusdam incidunt modi quis, sequi corrupti dignissimos iure rem quas nulla consectetur doloribus. Sint ratione illum sunt eum vitae incidunt quos possimus adipisci voluptatem voluptate quidem similique consequuntur beatae expedita dolore, atque, cum facere exercitationem commodi. Harum quos dicta quasi, molestias quidem suscipit possimus ullam nesciunt, totam aliquam ipsum obcaecati maiores quae, autem perspiciatis dolorem porro laboriosam fugiat repudiandae itaque nulla accusamus iste fugit eaque. Et eius nostrum porro!
+        </div>
+        <div id="slide" class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates a expedita est tempore? Incidunt expedita et id molestias nemo error, repudiandae minus ab dolor dolorem veniam debitis soluta hic alias consectetur optio reiciendis, ratione enim blanditiis aliquam cum exercitationem, maiores provident! Aut cumque alias quos, corporis rem sapiente, asperiores temporibus a mollitia molestias reprehenderit dolores at laudantium maxime. Nostrum unde quos maiores in quidem expedita maxime necessitatibus nisi. Dolor nesciunt nulla illo sapiente. Doloribus optio ullam, rem natus repudiandae alias hic possimus ab mollitia aliquid iure sapiente, libero rerum ex iusto nihil provident commodi. Nostrum, eligendi doloremque? Exercitationem, repudiandae. Saepe qui libero eligendi et labore placeat dolores? Nostrum debitis, inventore fuga ipsam culpa neque quia eveniet nobis maxime et doloribus, quam aspernatur perspiciatis laboriosam ab adipisci quae voluptatum, ipsum consequatur ratione dolor necessitatibus nemo laborum dolorum! Vel illo at ipsum hic pariatur sequi quis, voluptatum dicta laborum nobis excepturi aspernatur?
+        </div>
+        <footer class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt sit beatae natus molestiae ut, provident ab aliquid optio culpa non!</footer>
+        <!-- <div class="item">Item-1</div>
+        <div class="item">Item-2</div>
+        <div class="item">Item-3</div>
+        <div class="item">Item-4</div>
+        <div class="item">Item-5</div>
+        <div class="item">Item-6</div>
+        <div class="item">Item-7</div>
+        <div class="item">Item-8</div>
+        <div class="item">Item-9</div>
+        <div class="item">Item-10</div> -->
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin:0;             /* univeral selector */
+            padding: 0;
+        }
+                      
+          body {
+            background-color: rgb(122, 115, 141);
+          }
+        .container{
+        background-color: rgb(136, 125, 170);
+        border: 3px solid rgb(175, 176, 202);
+       /*  padding-left: 200px; 
+        padding-top: 20px;
+        padding-right: 40px;
+        padding-bottom: 80px; */
+        /*padding: 20px 30px 25px 40px; */ /* padding:top right bottom left; */
+        /* margin: 20px; */
+         padding: 20px 25px; /* padding: y(top/bottom) x(left/right) */
+      margin: 30px 20px; /* margin: y(top/bottom) x(left/right) */
+      border-radius: 20px;
+      width: 200px;
+      box-sizing: border-box;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is my heading.</h3>
+        <p id="first">Hello guys please like and subscribe my channel.</p>
+    </div>
+    <div class="container">
+        <h3>This is my heading.</h3>
+        <p id="second">Hello guys please like and subscribe my channel.</p>
+    </div>
+    <div class="container">
+        <h3>This is my heading.</h3>
+        <p id="third">Hello guys please like and subscribe my channel.</p>
+    </div>
+</body>
+</html>
